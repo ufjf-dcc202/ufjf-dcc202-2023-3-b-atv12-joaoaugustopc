@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCC202 - Atividade 12: Joao Augusto Pilato de Castro</title>
+    <script src="main.js" type="module"></script>
+  </head>
+  <body>
+    <main>
+      <h1>DCC202 - Atividade 12: Joao Augusto Pilato de Castro</h1>
+      <p>
+        Esta é a página principal que usa JavaScript para adicionar iteração.
+      </p>
+      <section>
+        <form name="entrada">
+          <fieldset>
+            <legend>Origem</legend>
+            <label
+              ><input type="radio" name="origem" value="pomar" />Pomar</label
+            >
+            <label><input type="radio" name="origem" value="joao" />João</label>
+            <label
+              ><input type="radio" name="origem" value="maria" />Maria</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>Destino</legend>
+            <label
+              ><input type="radio" name="destino" value="pomar" />Pomar</label
+            >
+            <label
+              ><input type="radio" name="destino" value="joao" />João</label
+            >
+            <label
+              ><input type="radio" name="destino" value="maria" />Maria</label
+            >
+          </fieldset>
+          <select name="fruta">
+            <option value="maca">Maçã</option>
+            <option value="pera">Pera</option>
+            <option value="banana">Banana</option>
+          </select>
+          <input
+            type="number"
+            name="quantidade"
+            min="0"
+            max="12"
+            step="1"
+            value="1"
+          />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      <section id="saida">
+        <h2>João</h2>
+        <ol id="joao"></ol>
+        <h2>Maria</h2>
+        <ol id="maria"></ol>
+      </section>
+    </main>
+  </body>
+</html>
